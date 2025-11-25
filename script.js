@@ -53,3 +53,16 @@ console.log("Before:", mergedCourses);
 student.addToMergedCourses("WRIT220");
 console.log("After adding WRIT220:", mergedCourses);
 console.log("Total merged courses:", student.totalMergedCourses());
+
+//adding method to student object to dynamically add course to courses array (but without merged courses from part 4)
+student.addCourse = function(courseName) {
+    this.courses.push(courseName);
+};
+
+student.totalCourses = function() {
+    return this.courses.length;
+};
+
+student.addCourse("WRIT220");
+console.log("Courses (not including merged courses after adding WRIT220:", student.courses);
+console.log("Total number of courses:", student.totalCourses());
