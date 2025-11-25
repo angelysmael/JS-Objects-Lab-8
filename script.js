@@ -66,3 +66,7 @@ student.totalCourses = function() {
 student.addCourse("WRIT220");
 console.log("Courses (not including merged courses after adding WRIT220:", student.courses);
 console.log("Total number of courses:", student.totalCourses());
+
+//bonus//
+const averageScore = scores.reduce((sum, score) => sum + score, 0) / scores.length;
+console.log("Average score:", averageScore.toFixed(2));
