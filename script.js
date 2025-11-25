@@ -24,3 +24,8 @@ console.log("Is parsed equal to original?", JSON.stringify(studentFromJSON) === 
 const { name, courses } = student;
 console.log("Destructured Name:", name);
 console.log("Destructured Courses:", courses);
+
+const scores = [85, 92, 78, 90];
+const [firstScore,secondScore] = scores;
+console.log("First score:", firstScore);
+console.log("Second score:", secondScore);
